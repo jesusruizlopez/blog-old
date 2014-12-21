@@ -1,0 +1,9 @@
+<section id="register" ng-controller="RegisterController">
+	<form ng-submit="registerAccount(user)">
+		<input type="text" class="form-control" placeholder="Usuario" ng-model="user.username">
+		<input type="text" class="form-control" placeholder="Correo Electrónico" ng-model="user.email">
+		<input type="password" class="form-control" placeholder="Contraseña" ng-model="user.password">
+		<input type="password" class="form-control" placeholder="Repetir Contraseña" ng-model="confirm_password">
+		<button class="btn btn-primary col-md-12">Registrar</button>
+	</form>
+</section>

@@ -1,0 +1,8 @@
+<section id="login" ng-controller="LoginController">
+	<form ng-submit="login(user)">
+		<input type="text" class="form-control" placeholder="Usuario" ng-model="user.username">
+		<input type="password" class="form-control" placeholder="Contraseña" ng-model="user.password">
+		<button class="btn btn-primary col-md-12">Ingresar</button>
+		<a href="#/register">Registrar una Cuenta</a>
+	</form>
+</section>

@@ -1,0 +1,22 @@
+<section id="post" ng-controller="PostController">
+	<div class="post-content container">
+		<h1>{{post.title}}</h1>
+		<p class="comment-text">{{post.text}}</p>
+		<p><strong>by: {{post.user}}</strong> - <strong>{{post.date}}</strong></p>
+		<h4><i class="fa fa-comments"></i> Comentarios:</h4>
+		<ul class="comments">
+			<li ng-repeat="comment in comments">
+				<p>{{comment.text}}</p>
+				<p><strong>by: {{comment.user}}</strong> - <strong>{{comment.date}}</strong></p>
+			</li>
+			<li ng-show="!comments.length">
+				<h5>No hay comentarios!</h5>
+			</li>
+		</ul>
+		<hr>
+		<div class="col-md-12 add-comment">
+			<input class="form-control" placeholder="Agregar comentario ..." ng-model="comment.text">
+			<button class="btn btn-primary" ng-click="addComment(comment)"><i class="fa fa-plus"></i> Agregar</button>
+		</div>
+	</div>
+</section>

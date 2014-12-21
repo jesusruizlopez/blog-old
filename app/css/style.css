@@ -1,0 +1,164 @@
+* {
+  outline: none!important;
+}
+body,
+html {
+  height: 100%;
+}
+#wrap {
+  min-height: 100%;
+}
+#main {
+  padding: 80px 40px;
+}
+.navbar {
+  border-radius: 0;
+  border-bottom: 1px solid gray;
+  background: rgba(255, 255, 255, 0.95);
+}
+.navbar .container {
+  padding: 0 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.navbar .navbar-brand {
+  color: #e55e52;
+  border: none;
+  border: 0;
+  font-size: 16px;
+}
+.navbar .navbar-brand i {
+  margin-right: 5px;
+}
+.navbar .nav li a {
+  border: none;
+  font-size: 14px;
+}
+.navbar .nav li.dropdown .dropdown-menu {
+  margin-top: 2px;
+}
+footer {
+  color: #e55e52;
+  text-align: center;
+  position: relative;
+  margin-top: -100px;
+  height: 100px;
+  clear: both;
+}
+footer p {
+  font-size: 12px;
+  padding-top: 70px;
+}
+/*********************************
+Modules
+*********************************/
+#login form,
+#register form {
+  padding: 20px;
+  border-radius: 6px;
+  width: 310px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#login form input,
+#register form input,
+#login form button,
+#register form button {
+  margin-bottom: 6px;
+}
+#login form a,
+#register form a {
+  color: #e55e52;
+}
+#posts ul {
+  list-style: none;
+}
+#posts .post {
+  border: 1px solid #e55e52;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+#posts .post h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#posts .search {
+  margin-bottom: 20px;
+}
+#posts #newPosts {
+  padding: 10px 30px;
+  background-color: #e55e52;
+  color: white;
+}
+#posts #newPosts a {
+  color: white;
+  text-decoration: underline;
+}
+#posts .new-thread {
+  position: fixed;
+  right: 90px;
+  border: 1px solid #e55e52;
+  border-radius: 6px;
+  padding: 30px;
+}
+#posts .new-thread h1 {
+  margin: 0;
+  padding: 0;
+}
+#posts .new-thread input,
+#posts .new-thread textarea,
+#posts .new-thread h1 {
+  margin-bottom: 10px;
+}
+#posts .new-thread textarea {
+  max-width: 100%;
+  height: 200px;
+  max-height: 250px;
+}
+#post .post-content {
+  border: 1px solid #e55e52;
+  border-radius: 6px;
+  padding: 40px;
+  padding-top: 20px;
+  width: 800px;
+}
+#post .post-content .comment-text {
+  border-top: 1px solid #e2e6e7;
+  border-bottom: 1px solid #e2e6e7;
+  padding: 20px 0;
+}
+#post .post-content .comments {
+  list-style: none;
+}
+#post .post-content .comments li {
+  padding: 10px;
+  margin: 0;
+  background-color: #f6fafb;
+  border-bottom: 1px solid #e7ebec;
+}
+#post .post-content .add-comment button {
+  margin-top: 10px;
+}
+/*********************************
+General
+*********************************/
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #e55e52;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  box-shadow: none;
+}
+.btn {
+  border: none;
+}
+.btn-primary {
+  background-color: #e55e52;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #db5448;
+}

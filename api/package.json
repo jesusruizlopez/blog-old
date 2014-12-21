@@ -1,0 +1,12 @@
+{
+  "author": "",
+  "name": "API",
+  "project": "",
+  "version": "0.1.0",
+  "devDependencies": {
+    "express": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "nodemailer": "*"
+  }
+}

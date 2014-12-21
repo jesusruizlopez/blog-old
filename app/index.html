@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Blog</title>
+</head>
+<body>
+  <div id="wrap">
+	  <div class="navbar navbar-fixed-top">
+      <header class="container">
+        <div class="navbar-header" button-logout>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-user"></i> Blog</a>
+          <ul class="nav navbar-nav navbar-right">
+            <li ng-show="isLoged()"><a href="" ng-click="logout()">Cerrar sesión</a></li>
+            <li ng-show="hasPendingRequests()"><a><i class="fa fa-spinner fa-spin"></i> cargando...</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div id="main" ng-view></div>
+  </div>
+  <footer>
+    <p>Copyright &copy; 2013 Blog</p>
+  </footer>
+  <script type="text/javascript" src="js/libs/angular.js"></script>
+  <script type="text/javascript" src="js/libs/angular-route.js"></script>
+  <script type="text/javascript" src="js/libs/jquery.js"></script>
+  <script type="text/javascript" src="js/libs/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/directives.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  <!-- <script src="../api/node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script> -->
+  <script type="text/javascript" src="http://127.0.0.1:7777/socket.io/socket.io.js"></script>
+</body>
+</html>
